@@ -1,0 +1,73 @@
+body {
+	background-color: #453;
+}
+
+.head, .eye, .iris, .pupil {
+	border-radius: 50%;
+}
+
+.head {
+	position: relative;
+	width: 70vh;
+	height: 70vh;
+	background-color: yellow;
+	margin: 15vh auto;
+	border: 2vh solid black;
+	box-sizing: border-box;
+}
+
+.eye {
+	position: absolute;
+	width: 15vh;
+	height: 15vh;
+	top: 12vh;
+	background-color: white;
+	border: 1vh solid black;
+	box-sizing: border-box;
+}
+.eye.left {
+	left: 15vh;
+}
+.eye.right {
+	right: 15vh;
+}
+
+.iris {
+	position: absolute;
+	left: 3vh;
+	top: 3vh;
+	width: 5vh;
+	height: 5vh;
+	background-color: #822;
+}
+
+.pupil {
+	position: absolute;
+	left: 1.5vh;
+	top: 1.5vh;
+	width: 2vh;
+	height: 2vh;
+	background-color: black;
+}
+
+.glint {
+	position: absolute;
+	left: 0.5vh;
+	top: 0.5vh;
+	width: 0.2vh;
+	height: 0.2vh;
+	background-color: white;
+}
+
+.mouth {
+	border-bottom-left-radius: 15vh;
+	border-bottom-right-radius: 15vh;
+	background-color: white;
+	width: 35vh;
+	height: 13vh;
+	position: absolute;
+	top: 40vh;
+	left: 15vh;
+	border: 1vh solid black;
+	box-sizing: border-box;
+}
