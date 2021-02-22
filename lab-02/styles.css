@@ -39,6 +39,7 @@ main {
   overflow: auto;
   display: flex;
   flex-direction: row-reverse;
+
 }
 
 section{

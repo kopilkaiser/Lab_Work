@@ -1,0 +1,104 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #a00;
+  color: #fdd;
+}
+
+
+#menuToggler{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  /* makes it possible to click the button after the menu opens */
+  z-index: 1;
+  font-size: 3em;
+  text-align: right;
+  padding: 0 1rem;
+  line-height: 0.8em;
+  box-sizing: border-box;
+
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  transform: translateY(-100vh);
+  /* transform: scale(0); */
+
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2em;
+  text-align: center;
+  transition: 0.3s;
+
+}
+
+nav.open{
+  transform: none;
+  /* transform: scale(1); */
+
+
+  /* transform: translateY(-100vh); */
+
+}
+
+
+nav a{
+  text-direction: none;
+  padding: 0.25em 0.5em;
+  color: #fff;
+}
+
+nav a:visited{
+    color: #fff;
+}
+
+p, h1{
+  max-width: 600px;
+}
+
+p{
+  margin: 1em auto;
+}
+
+h1{
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px){
+
+  #menuToggler{
+    display: none;
+  }
+
+  nav{
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2em;
+
+
+    transform: none;
+  }
+
+  nav a:hovr {
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+  header, p{
+    padding: 0 1em;
+  }
+}
