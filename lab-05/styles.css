@@ -1,0 +1,68 @@
+:root{
+  --height: : 50%;
+  
+}
+
+.relative{
+  position: relative;
+
+}
+
+#heightTarget{
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  width: 4em;
+  background-color: hsl(0, 70%, 40%);
+  height: var(--height);
+  transition: 0.4s;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+input:invalid{
+    background-color: hsl(0, 70%,70%);
+    border-color: hsl(0, 100%, 70%)
+}
+
+body{
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: rgb(204, 206, 219);
+}
+
+header{
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 70%, 40%);
+  color: hsl(0, 70%, 80%);
+}
+
+#search{
+  order: 1;
+  padding 1em;
+}
+
+
+main, section{
+  padding: 1em;
+  border-bottom: 0.5px solid hsl(0, 70%, 80%);
+}
+
+@media screen and (min-width: 448px){
+  header{
+    /* display: flex; */
+    flex-direction: row;
+  }
+
+@media screen and (min-width: 900px){
+  header, main section{
+    padding: 1em 25vw;
+  }
+}
+}
