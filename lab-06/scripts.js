@@ -57,17 +57,18 @@
 			addItem(text.value);
 			text.value = null;
 			text.focus();
-			saveToStorage();   //clear from the Local Storage -> file://
+			saveToStorage();   //add to the Local Storage -> file://
 		}
 	});
 
 	clear.addEventListener('click', ev => {
       if(confirm("Are you sure you want to remove the whole list?")){
           clearList();
-          saveToStorage();    //clear whole list from the Local Storage -> file://
+          saveToStorage();    //clear whole list from the "Local Storage -> file://"
       }
   });
 
+  // Add the text from the input by pressing the "Enter" key
 	text.addEventListener('keydown', ev => {
 		if(ev.key == "Enter") {
 			add.click();
