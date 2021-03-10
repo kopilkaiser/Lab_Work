@@ -75,5 +75,11 @@
 		}
 	});
 
+	window.addEventListener('storage', () => {
+	  // When local storage changes, dump the list to
+	  // the console.
+	  loadFromStorage();
+	});
+
 	loadFromStorage();
 })()
