@@ -73,8 +73,8 @@ html{
 }
 
 input:invalid{
-    background-color: hsl(0, 70%,70%);
-    border-color: hsl(0, 100%, 70%)
+  background-color: hsl(0, 70%,70%);
+  border-color: hsl(0, 100%, 70%)
 }
 
 body{
@@ -108,10 +108,10 @@ main, section{
     /* display: flex; */
     flex-direction: row;
   }
+}
 
 @media screen and (min-width: 900px){
   header, main section{
     padding: 1em 25vw;
   }
-}
 }
