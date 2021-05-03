@@ -4,12 +4,14 @@ let objectIDs;
 
 async function loadObject(id) {
 	const url = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`;
+
 	const response = await fetch(url);
 	return response.json();
 }
 
 async function loadSearch(query, isHighlight) {
 	let url = `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true`;
+
 	if(isHighlight) {
 		url = `${url}&isHighlight=${isHighlight}`;
 	}
